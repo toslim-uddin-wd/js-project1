@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #2C3A47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card {
+    background: linear-gradient(120deg,#f6e58d, rgba(19, 15, 64, 0.5));
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+
+    .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        input {
+            border: 0;
+            outline: 0;
+            background: #F8EFBA;
+            color: black;
+            padding: 15px 20px;
+            border-radius: 20px;
+            height: 40px;
+            flex: 1;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        button {
+            width: 40px;
+            height: 40px;
+            background: #F8EFBA;
+            border: 0;
+            border-radius: 50%;
+        }
+    }
+    .weather {
+        display: none;
+
+        .weather-icon {
+            width: 150px;
+            margin-top: 16px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+        h2 {
+            font-size: 28px;
+            color: white;
+        }
+    }
+    .error {
+        text-align: left;
+        margin-top: 5px;
+        margin-left: 20px;
+        font-size: 10px;
+        color: white;
+        display: none;
+        
+    }
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 0 20px;
+
+        .col {
+            display: flex;
+            align-items: center;
+            text-align: left;
+
+            img {
+                width: 40px;
+                margin-right: 10px;
+            }
+            .humidity, .wind {
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                margin-top: -6px;
+            }
+            p {
+                font-size: 12px;
+                font-weight: 500;
+                color: #fff;
+        }
+
+        }
+
+    }
+}
+
